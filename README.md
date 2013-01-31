@@ -21,6 +21,12 @@ Download and put the git-http-whitelist script somewhere and make it executable.
 $ chmod +x /path/to/git-http-whitelist
 ```
 
+Modify it to point it to the correct location of git-http-backend:
+
+```
+GIT_HTTP_BACKEND="/path/to/git-http-backend"
+```
+
 Assuming that gitolite and gitweb are properly set up, modify the virtualhost
 like this (example given for apache):
 
